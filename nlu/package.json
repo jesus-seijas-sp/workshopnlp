@@ -1,0 +1,28 @@
+{
+  "name": "nlu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lintfix": "eslint --fix .",
+    "test": "eslint --fix . && jest . --silent --verbose --coverage --maxWorkers=4",
+    "test01": "eslint --fix . && jest ./test/01-normalize.test.js --silent --verbose --coverage --maxWorkers=4",
+    "test02": "eslint --fix . && jest ./test/02-tokenize.test.js --silent --verbose --coverage --maxWorkers=4",
+    "test03": "eslint --fix . && jest ./test/03-encoder.test.js --silent --verbose --coverage --maxWorkers=4",
+    "start": "node .",
+    "startdev": "node --watch ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.34.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jest": "^27.2.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jest": "^29.4.3",
+    "prettier": "^2.8.4"
+  }
+}
