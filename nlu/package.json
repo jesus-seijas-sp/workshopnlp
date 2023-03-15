@@ -10,6 +10,11 @@
     "test01": "eslint --fix . && jest ./test/01-normalize.test.js --silent --verbose --coverage --maxWorkers=4",
     "test02": "eslint --fix . && jest ./test/02-tokenize.test.js --silent --verbose --coverage --maxWorkers=4",
     "test03": "eslint --fix . && jest ./test/03-encoder.test.js --silent --verbose --coverage --maxWorkers=4",
+    "test04-01": "eslint --fix . && jest ./test/04-01.neural.test.js --silent --verbose --coverage --maxWorkers=4",
+    "test04-02": "eslint --fix . && jest ./test/04-02.neural.test.js --silent --verbose --coverage --maxWorkers=4",
+    "test04-03": "eslint --fix . && jest ./test/04-03.neural.test.js --silent --verbose --coverage --maxWorkers=4",
+    "test04-04": "eslint --fix . && jest ./test/04-04.neural.test.js --silent --verbose --coverage --maxWorkers=4",
+    "test04-05": "eslint --fix . && jest ./test/04-05.neural.test.js --silent --verbose --coverage --maxWorkers=4",
     "start": "node .",
     "startdev": "node --watch ."
   },

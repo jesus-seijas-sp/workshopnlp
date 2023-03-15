@@ -1,4 +1,4 @@
-const { Bench, Neural, measure, normalize } = require('./src');
+const { Bench, Neural, measure, normalize, tokenize } = require('./src');
 const corpusSmallEn = require('./data/small/corpus-en.json');
 const corpusSmallEs = require('./data/small/corpus-es.json');
 const corpusSmallJa = require('./data/small/corpus-ja.json');
@@ -6,8 +6,10 @@ const corpusMassiveEn = require('./data/massive/corpus-massive-en.json');
 const corpusMassiveEs = require('./data/massive/corpus-massive-es.json');
 const corpusMassiveJa = require('./data/massive/corpus-massive-ja.json');
 
+console.log(tokenize(normalize('金曜日の午前九時に起こしてください')));
 const tokenizeChar = (text) => text.split('');
 const processorJa = (text) => tokenizeChar(normalize(text));
+console.log(processorJa('金曜日の午前九時に起こしてください'));
 
 const languages = [
   {
